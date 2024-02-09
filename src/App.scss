@@ -1,0 +1,10 @@
+@import './scss/variables';
+
+.App {
+  margin: 0 auto;
+  max-width: $pageMaxWidth;
+
+  .page-content {
+    padding-top: 4rem;
+  }
+}
