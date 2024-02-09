@@ -1,7 +1,8 @@
 @import '../scss/variables';
 
 .NavBar {
-  position: fixed;
+  color: #000;
+  position: absolute;
   z-index: 999;
   top: 0;
   width: 100%;
@@ -18,7 +19,7 @@
   a {
     text-decoration: none;
     text-align: center;
-    color: $navTextColor;
+    color: #000;
   }
 
   ul {
