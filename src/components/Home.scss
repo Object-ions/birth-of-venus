@@ -1,22 +1,25 @@
 .Home {
-  // background: #353;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: calc(100vh - 4rem);
-  width: 100vw;
+  width: 1400px;
   max-width: 100vw;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
 
   @for $i from 1 through 23 {
     .image-#{$i} {
       position: absolute;
-      width: 100%;
-      height: auto;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: calc(100vh - 4rem);
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
       z-index: $i;
     }
   }
+
   .parallax {
     pointer-events: none;
   }

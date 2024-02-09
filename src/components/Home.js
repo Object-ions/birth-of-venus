@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Home.scss';
 
 const Home = () => {
@@ -10,35 +10,42 @@ const Home = () => {
     return `${imagePath}${index + 1}${imageExtension}`;
   });
 
-  const parallax_el = document.querySelectorAll('.parallax');
-  let xValue = 0 - window.innerWidth / 2;
-  let yValue = 0 - window.innerHeight / 2;
+  const homeRef = useRef();
 
-  parallax_el.forEach((el) => {
-    let speedx = el.dataset.speedx;
-    let speedy = el.dataset.speedy;
+  useEffect(() => {
+    const parallaxEffect = (e) => {
+      const { clientX, clientY } = e;
+      const xValue = clientX - window.innerWidth / 2;
+      const yValue = clientY - window.innerHeight / 2;
 
-    el.style.transform = `translateX(calc(-50% + ${
-      -xValue * speedx
-    }px) translateY(calc(-50% + ${yValue * speedy}px)`;
-  });
+      const parallax_el = homeRef.current.querySelectorAll('.parallax');
+      parallax_el.forEach((el) => {
+        const speedx = parseFloat(el.dataset.speedx);
+        const speedy = parseFloat(el.dataset.speedy);
 
-  window.addEventListener('mousemove', (e) => {
-    xValue = e.clientX;
-    yValue = e.clientY;
-    console.log(xValue, yValue);
-  });
+        el.style.transform = `translate(${xValue * speedx}px, ${
+          yValue * speedy
+        }px)`;
+      });
+    };
+
+    window.addEventListener('mousemove', parallaxEffect);
+
+    return () => {
+      window.removeEventListener('mousemove', parallaxEffect);
+    };
+  }, []);
 
   return (
-    <div className="Home">
+    <div className="Home" ref={homeRef}>
       {images.map((src, index) => (
         <img
           key={index}
           src={src}
           className={`parallax image-${index + 1}`}
           alt={`background ${index + 1}`}
-          data-speedx={`0.${Math.floor(Math.random() * 1000)}`}
-          data-speedy={`0.${Math.floor(Math.random() * 1000)}`}
+          data-speedx={Math.random() * (0.1 - 0.05) + 0.05}
+          data-speedy={Math.random() * (0.1 - 0.05) + 0.05}
         />
       ))}
     </div>
