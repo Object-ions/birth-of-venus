@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import './Home.scss';
 
 const Home = () => {
-  const numberOfImages = 23;
-  const imagePath = './venus/img';
+  const numberOfImages = 13;
+  const imagePath = './venus/';
   const imageExtension = '.png';
 
   const images = Array.from({ length: numberOfImages }, (_, index) => {
@@ -37,17 +37,19 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="Home" ref={homeRef}>
-      {images.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          className={`parallax image-${index + 1}`}
-          alt={`background ${index + 1}`}
-          data-speedx={Math.random() * (0.1 - 0.05) + 0.05}
-          data-speedy={Math.random() * (0.1 - 0.05) + 0.05}
-        />
-      ))}
+    <div className="Home">
+      <div className="home-images" ref={homeRef}>
+        {images.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            className={`parallax image-${index + 1}`}
+            alt={`background ${index + 1}`}
+            data-speedx={Math.random() * (0.1 - 0.05) + 0.05}
+            data-speedy={Math.random() * (0.1 - 0.05) + 0.05}
+          />
+        ))}
+      </div>
     </div>
   );
 };
