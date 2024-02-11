@@ -3,7 +3,8 @@ import './App.scss';
 import NavBar from './layout/NavBar';
 import Home from './pages/home/Home';
 import Interpretation from './pages/interpretation/Interpretation';
-import Objectives from './pages/objectives/Objectives';
+import Objectives from './components/Objectives';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
