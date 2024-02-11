@@ -2,10 +2,11 @@
 
 .NavBar {
   color: #000;
-  position: absolute;
-  z-index: 999;
-  top: 0;
-  width: 100%;
+  background-color: red;
+  // position: absolute;
+  // z-index: 999;
+  // top: 0;
+  max-width: 1400px;
   height: 3rem;
   display: flex;
   align-items: center;
@@ -13,7 +14,7 @@
   margin: 1rem 0;
   font-family: $navFont;
   text-transform: uppercase;
-  padding-bottom: 1rem;
+  // padding-bottom: 1rem;
   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
 
   a {

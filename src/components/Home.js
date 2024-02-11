@@ -38,6 +38,10 @@ const Home = () => {
 
   return (
     <div className="Home">
+      <div className="head-text">
+        <h1> Birth of Venus </h1>
+        <h4>Sandro Botticelli (Firenze 1445 – 1510)</h4>
+      </div>
       <div className="home-images" ref={homeRef}>
         {images.map((src, index) => (
           <img
@@ -49,6 +53,20 @@ const Home = () => {
             data-speedy={Math.random() * (0.1 - 0.05) + 0.05}
           />
         ))}
+      </div>
+      <div className="disclaimer">
+        <p>
+          A reimagined digital adaptation of Botticelli's 'The Birth of Venus,'
+          crafted specifically for an enhanced parallax effect. This image is
+          not the original artwork.
+        </p>
+        <p>
+          The Birth of Venus is a painting by the Italian artist Sandro
+          Botticelli, probably made in the mid 1480s. It depicts the goddess
+          Venus arriving at the shore after her birth, when she had emerged from
+          the sea fully-grown. The painting is in the Uffizi Gallery in
+          Florence, Italy.
+        </p>
       </div>
     </div>
   );

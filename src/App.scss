@@ -2,9 +2,6 @@
 
 .App {
   margin: 0 auto;
+  padding: 0 2rem;
   max-width: $pageMaxWidth;
-
-  .page-content {
-    padding-top: 4rem;
-  }
 }

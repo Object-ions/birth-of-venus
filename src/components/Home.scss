@@ -1,28 +1,42 @@
 .Home {
+  max-width: 1400px;
+  margin: 0 auto; // Centers the content
+
+  .head-text,
+  .disclaimer {
+    max-width: 90%;
+    margin: 0 auto; // Centers these elements within .Home
+  }
+
   .home-images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 4rem);
-    width: 1400px;
-    max-width: 100vw;
     position: relative;
+    width: 100%; // Ensures the div takes full width of its parent
+    padding-bottom: 61.8%; // This is an example for a 4:3 aspect ratio, adjust as needed
     overflow: hidden;
 
-    @for $i from 1 through 23 {
+    @for $i from 1 through 13 {
       .image-#{$i} {
         position: absolute;
-        max-width: 100%;
-        max-height: calc(100vh - 4rem);
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; // Image will cover the entire parent space
+        object-fit: cover; // This will ensure the image covers the area without losing its aspect ratio
         z-index: $i;
       }
     }
+  }
 
-    .parallax {
-      pointer-events: none;
-    }
+  .disclaimer {
+    position: relative; // Stack on top of the last parallax image
+    z-index: 15; // Adjust based on the number of parallax images
+    background: rgba(
+      255,
+      255,
+      255,
+      0.8
+    ); // Semi-transparent background for readability
+    padding: 1em;
+    box-sizing: border-box; // Include padding in width calculation
   }
 }
