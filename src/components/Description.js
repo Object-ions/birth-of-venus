@@ -1,4 +1,5 @@
 import React from 'react';
+import './Description.scss';
 
 const Description = () => {
   const descriptionData = [
@@ -10,9 +11,12 @@ const Description = () => {
 
   return (
     <div className="Description">
-      {descriptionData.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
+      <h2>Description</h2>
+      <div className="description-content">
+        {descriptionData.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
       <p className="author">Text by: Daniela Parenti</p>
     </div>
   );

@@ -1,4 +1,6 @@
 import React from 'react';
+import './Objectives.scss';
+import CarouselComponent from './CarouselComponent';
 
 const Objectives = () => {
   const objectiveData = {
@@ -12,6 +14,8 @@ const Objectives = () => {
   };
   return (
     <div className="Objectives">
+      <CarouselComponent />
+      <h2>Objectives</h2>
       {Object.entries(objectiveData).map(([key, value], index) => (
         <React.Fragment key={index}>
           <strong>{key}</strong>: {value}

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import ParallaxImage from '../../components/ParallaxImage';
 import { useParallaxEffect } from '../../hooks/useParallaxEffect';
+import './HomeImages.scss';
 
 const HomeImages = () => {
   const numberOfImages = 11;

@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './Home.scss';
 import homeData from './home-data.json';
 import HomeImages from './HomeImages';
-import Objectives from '../../components/Objectives';
 import Description from '../../components/Description';
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
       <div className="disclaimer">
         <p>{homeData.disclaimer[0]}</p>
       </div>
-      <Objectives />
       <Description />
     </div>
   );

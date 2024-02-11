@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -7,6 +7,7 @@ const NavBar = () => {
     { path: '/', name: 'Home' },
     { path: '/objectives', name: 'Objectives' },
     { path: '/interpretation', name: 'Interpretation' },
+    { path: '/about', name: 'About' },
   ];
   return (
     <nav className="NavBar">
@@ -14,15 +15,14 @@ const NavBar = () => {
       <ul>
         {linkList.map((link, index) => (
           <li key={index}>
-            <Link to={link.path}>{link.name}</Link>
+            <NavLink
+              to={link.path}
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+            >
+              {link.name}
+            </NavLink>
           </li>
         ))}
-      </ul>
-
-      <ul>
-        <li>
-          <Link to={'/about'}>About</Link>
-        </li>
       </ul>
     </nav>
   );

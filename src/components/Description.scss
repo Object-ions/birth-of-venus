@@ -1,0 +1,12 @@
+.Description {
+  h2 {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .description-content {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
