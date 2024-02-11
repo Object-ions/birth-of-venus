@@ -1,6 +1,9 @@
+@import '../../scss/variables';
+
 .Home {
   max-width: 1400px;
   margin: 0 auto;
+  font-family: $textFont;
 
   .home-images {
     position: relative;
