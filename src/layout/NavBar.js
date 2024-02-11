@@ -10,7 +10,7 @@ const NavBar = () => {
   ];
   return (
     <nav className="NavBar">
-      <img src="#" alt="logo" />
+      <h1 className="logotype">Birth of Venus</h1>
       <ul>
         {linkList.map((link, index) => (
           <li key={index}>

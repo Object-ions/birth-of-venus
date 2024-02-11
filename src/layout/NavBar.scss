@@ -2,19 +2,14 @@
 
 .NavBar {
   color: #000;
-  background-color: red;
-  // position: absolute;
-  // z-index: 999;
-  // top: 0;
   max-width: 1400px;
   height: 3rem;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
   font-family: $navFont;
   text-transform: uppercase;
-  // padding-bottom: 1rem;
   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
 
   a {
@@ -30,5 +25,10 @@
     li {
       margin: 0 2rem;
     }
+  }
+
+  .logotype {
+    font-family: $logotypeFont;
+    font-size: 5rem;
   }
 }

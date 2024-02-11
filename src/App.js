@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import NavBar from './layout/NavBar';
-import Home from './components/Home';
-import Interpretation from './components/Interpretation';
-import Objectives from './components/Objectives';
+import Home from './pages/home/Home';
+import Interpretation from './pages/interpretation/Interpretation';
+import Objectives from './pages/objectives/Objectives';
 
 function App() {
   return (
