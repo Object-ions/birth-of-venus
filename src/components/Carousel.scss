@@ -1,68 +1,81 @@
-.carousel {
-  margin: 4rem 0;
-  height: 500px;
+@import '../scss/variables';
 
-  a {
-    text-decoration: none;
+.CarouselComponent {
+  font-family: $textFont;
+
+  small {
+    background: #000;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.5rem;
   }
 
-  .carousel-item {
+  .carousel {
+    margin: 4rem 0;
     height: 500px;
 
-    img {
-      max-height: 500px;
-      width: auto;
-      object-fit: contain;
-      margin: auto;
-    }
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: black;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: none !important;
+    a {
       text-decoration: none;
+    }
 
-      &:after {
-        content: '>';
-        font-size: 20px;
-        color: #fff;
+    .carousel-item {
+      height: 500px;
+
+      img {
+        max-height: 500px;
+        width: auto;
+        object-fit: contain;
+        margin: auto;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: black;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: none !important;
+        text-decoration: none;
+
+        &:after {
+          content: '>';
+          font-size: 20px;
+          color: #fff;
+        }
+
+        &.carousel-control-prev-icon:after {
+          content: '<';
+        }
+      }
+    }
+
+    .carousel-indicators {
+      margin-bottom: 1.5rem;
+
+      li {
+        background-color: black;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
       }
 
-      &.carousel-control-prev-icon:after {
-        content: '<';
+      .active {
+        background-color: white;
       }
     }
-  }
 
-  .carousel-indicators {
-    margin-bottom: 1.5rem;
-
-    li {
-      background-color: black;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
+    .carousel-caption {
+      background: rgba(0, 0, 0, 1);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      opacity: 0.8;
     }
-
-    .active {
-      background-color: white;
-    }
-  }
-
-  .carousel-caption {
-    background: rgba(0, 0, 0, 1);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0.8;
   }
 }

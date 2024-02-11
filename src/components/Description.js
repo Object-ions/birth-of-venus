@@ -17,7 +17,15 @@ const Description = () => {
           <p key={index}>{paragraph}</p>
         ))}
       </div>
-      <p className="author">Text by: Daniela Parenti</p>
+      <p className="author">
+        <a
+          href="https://www.uffizi.it/en/artworks/birth-of-venus"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {'Text by: Daniela Parenti '}
+        </a>
+      </p>
     </div>
   );
 };

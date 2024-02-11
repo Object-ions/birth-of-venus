@@ -1,4 +1,7 @@
+@import '../scss/variables';
+
 .Objectives {
+  font-size: $textFont;
   margin: 5rem auto;
 
   h2 {
