@@ -1,4 +1,5 @@
 import React from 'react';
+import './ArticleHeader.scss';
 
 const ArticleHeader = ({
   title,
@@ -9,15 +10,14 @@ const ArticleHeader = ({
   genre,
 }) => {
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className="ArticleHeader">
+      <p>{date}</p>
       <p>
         By: <a href={authorUrl}>{author}</a>
       </p>
       <p>
-        Original Article: <a href={articleUrl}>widewalls</a>
+        Origin: <a href={articleUrl}>widewalls</a>
       </p>
-      <p>Published: {date}</p>
       <p>Genre: {genre}</p>
     </div>
   );

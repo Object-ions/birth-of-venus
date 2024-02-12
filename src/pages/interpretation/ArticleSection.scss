@@ -1,0 +1,40 @@
+@import '../../scss/variables';
+
+.article-section {
+  margin: 2rem auto;
+  width: 70%;
+
+  h3 {
+    margin: 1.25rem 0;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+  }
+
+  .two-col {
+    column-count: 2;
+    column-gap: 2rem;
+    column-fill: balance;
+    text-align: justify;
+    text-justify: inter-word;
+
+    // Drop cap styles
+    &:first-of-type::first-letter {
+      font-family: $titleFont;
+      float: left;
+      font-size: 4em;
+      line-height: 1;
+      margin-right: 0.1em;
+      font-weight: bold;
+    }
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    border-left: 5px solid rgba($color: #000000, $alpha: 0.5);
+  }
+
+  p.avoid-break {
+    break-inside: avoid-column; // Prevents breaks inside elements
+  }
+}

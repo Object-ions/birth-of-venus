@@ -1,4 +1,5 @@
 import React from 'react';
+import './ArticleSection.scss';
 
 const ArticleSection = ({ section }) => {
   const blockquoteIndex = section.paragraphs.findIndex((p) =>
@@ -6,13 +7,17 @@ const ArticleSection = ({ section }) => {
   );
 
   return (
-    <div>
+    <div className="article-section">
       <h3>{section.title}</h3>
       {section.paragraphs.map((paragraph, index) => {
         if (index === blockquoteIndex) {
           return <blockquote key={index}>{paragraph}</blockquote>;
         }
-        return <p key={index}>{paragraph}</p>;
+        return (
+          <p key={index} className="two-col">
+            {paragraph}
+          </p>
+        );
       })}
     </div>
   );
