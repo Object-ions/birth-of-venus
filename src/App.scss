@@ -19,6 +19,15 @@
   background-color: #555; /* Darken the thumb color on hover */
 }
 
+h1,
+h2 {
+  font-family: $titleFont;
+}
+
+p {
+  font-family: $textFont !important;
+}
+
 .App {
   margin: 0 auto;
   padding: 0 3rem;
