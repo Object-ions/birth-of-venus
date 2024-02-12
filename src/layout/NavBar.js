@@ -7,6 +7,7 @@ const NavBar = () => {
     { path: '/', name: 'Home' },
     { path: '/objectives', name: 'Objectives' },
     { path: '/interpretation', name: 'Interpretation' },
+    { path: '/annotations', name: 'Annotations' },
     { path: '/about', name: 'About' },
   ];
   return (

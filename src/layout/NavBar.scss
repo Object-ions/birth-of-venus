@@ -45,12 +45,13 @@
     list-style: none;
 
     li {
-      margin: 0 2rem;
+      margin: 0 1rem;
     }
   }
 
   .logotype {
     font-family: $logotypeFont;
-    font-size: 5rem;
+
+    font-size: 4rem;
   }
 }
