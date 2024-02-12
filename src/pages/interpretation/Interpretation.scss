@@ -1,0 +1,27 @@
+blockquote {
+  font-family: 'Playfair Display', serif; /* replace with your desired font-family */
+  font-size: 1.5em; /* adjust size as needed */
+  line-height: 1.4; /* for better readability */
+  margin: 20px 0; /* spacing before and after the blockquote */
+  padding: 10px 20px; /* spacing inside the blockquote */
+  position: relative; /* for pseudo-element positioning */
+}
+
+blockquote:before {
+  content: open-quote; /* adds an opening quote */
+  font-size: 2em; /* larger size for the quote symbol */
+  line-height: 0.1em; /* adjust line height to fit the quote */
+  margin-right: 0.25em; /* spacing between quote symbol and text */
+  vertical-align: -0.4em; /* aligns the quote symbol with the text */
+  position: relative; /* ensures the symbol is positioned correctly */
+  color: #999; /* color of the quote symbol */
+}
+
+blockquote:after {
+  content: close-quote; /* adds a closing quote */
+  /* rest of the styling would be similar to blockquote:before */
+}
+
+blockquote p {
+  display: inline; /* ensures the quote flows with the text */
+}
