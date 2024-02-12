@@ -1,11 +1,11 @@
 import React from 'react';
 import './Objectives.scss';
-import CarouselComponent from './CarouselComponent';
+import CarouselComponent from '../../components/CarouselComponent';
 
 const Objectives = () => {
   const objectiveData = {
     Date: '1484ca',
-    Museum: 'The Uffizi',
+    Museum: 'The Uffizi Gallery',
     Collection: 'Painting',
     Location: 'A12. BOTTICELLI Venus',
     Technique: 'Tempera on canvas',
