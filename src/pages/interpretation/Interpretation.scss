@@ -28,4 +28,13 @@
   blockquote p {
     display: inline; /* ensures the quote flows with the text */
   }
+
+  .article-image-wrapper {
+    width: 70%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
 }
