@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "imageUrl": "/references/baptist-of-christ.png",
     "title": "Baptism of Christ (No. 23 Scenes from the Life of Christ - 7. Baptism of Christ )",
     "artist": "Giotto",
     "type": "fresco",
@@ -14,6 +15,7 @@
   },
   {
     "id": "2",
+    "imageUrl": "/references/the-birth-of-venus-marco-dente.png",
     "title": "The Birth of Venus",
     "artist": "Marco Dente",
     "type": "engraving",
@@ -23,6 +25,7 @@
   },
   {
     "id": "3",
+    "imageUrl": "/references/venus-pudica.png",
     "title": "Venus Pudica (Venus de' Medici)",
     "artist": "Cleomenes",
     "type": "statue",
