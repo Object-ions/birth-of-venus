@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "imageUrl": "/references/baptist-of-christ.png",
-    "title": "Baptism of Christ (No. 23 Scenes from the Life of Christ - 7. Baptism of Christ )",
+    "imageUrl": "/references/baptist-of-christ.jpg",
+    "title": "Baptism of Christ",
     "artist": "Giotto",
     "type": "fresco",
     "date": "1304 - 1306",
@@ -15,7 +15,7 @@
   },
   {
     "id": "2",
-    "imageUrl": "/references/the-birth-of-venus-marco-dente.png",
+    "imageUrl": "/references/the-birth-of-venus-marco-dente.jpg",
     "title": "The Birth of Venus",
     "artist": "Marco Dente",
     "type": "engraving",

@@ -1,0 +1,68 @@
+@import '../../scss/variables';
+
+.AnnotationItem {
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 3rem auto 2rem auto;
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      column-count: 2;
+      column-gap: 2rem;
+      column-fill: balance;
+      text-align: justify;
+
+      p:first-of-type::first-letter {
+        font-family: $titleFont;
+        float: left;
+        font-size: 4em;
+        line-height: 1;
+        margin-right: 0.1em;
+        font-weight: bold;
+      }
+
+      .objectives {
+        background: #000;
+        color: #fff;
+        padding: 0.5rem;
+        font-size: 0.75rem;
+
+        p::first-letter {
+          font-family: inherit;
+          float: none;
+          line-height: inherit;
+          margin-right: inherit;
+          font-weight: inherit;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  p:last-of-type {
+    grid-column: 2 / -1;
+    white-space: pre-wrap;
+  }
+}

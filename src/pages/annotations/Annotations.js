@@ -7,23 +7,24 @@ import AnnotationItem from './AnnotationItem';
 const fresco = data[0];
 const engraving = data[1];
 const statue = data[2];
-
-const Annotations = ({ fresco, engraving, statue }) => {
+const Annotations = () => {
   return (
     <div className="Annotations">
       <div className="annotations-intro">
         <h1>{text[0].title}</h1>
         <h2>{text[0].subtitle}</h2>
         <p>By: {text[0].by}</p>
-        <p>{text[0].introduction}</p>
+        <div className="intro-text">
+          <p>{text[0].introduction}</p>
+        </div>
       </div>
       <div className="annotations-body">
-        <AnnotationItem {...fresco} />
-        <AnnotationItem {...engraving} />
-        <AnnotationItem {...statue} />
+        <AnnotationItem item={fresco} className="fresco" />
+        <AnnotationItem item={engraving} className="engraving" />
+        <AnnotationItem item={statue} className="statue" />
       </div>
       <div className="annotations-conclusion">
-        <p>{text[0].conclusion}</p>
+        <p>Conclusion :{text[0].conclusion}</p>
       </div>
     </div>
   );

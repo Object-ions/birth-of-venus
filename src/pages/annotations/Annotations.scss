@@ -1,1 +1,22 @@
 @import '../../scss/variables';
+
+.Annotations {
+  width: 70%;
+  margin: 0 auto;
+
+  .annotations-intro {
+    .intro-text {
+      column-fill: balance;
+      text-align: justify;
+    }
+  }
+
+  .annotations-body {
+    .fresco {
+    }
+  }
+
+  .annotations-conclusion {
+    margin: 2rem 0 5rem 0;
+  }
+}
