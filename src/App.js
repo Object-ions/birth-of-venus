@@ -6,6 +6,7 @@ import Interpretation from './pages/interpretation/Interpretation';
 import Objectives from './pages/objectives/Objectives';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Annotations from './pages/annotations/Annotations';
+import About from './pages/about/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/objectives" element={<Objectives />} />
           <Route path="/interpretation" element={<Interpretation />} />
           <Route path="/annotations" element={<Annotations />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </div>

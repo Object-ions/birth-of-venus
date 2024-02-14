@@ -5,9 +5,9 @@ import './NavBar.scss';
 const NavBar = () => {
   const linkList = [
     { path: '/', name: 'Home' },
-    { path: '/objectives', name: 'Objectives' },
     { path: '/interpretation', name: 'Interpretation' },
     { path: '/annotations', name: 'Annotations' },
+    // { path: '/objectives', name: 'Objectives' },
     { path: '/about', name: 'About' },
   ];
   return (
