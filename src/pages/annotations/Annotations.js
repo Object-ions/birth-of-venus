@@ -13,7 +13,7 @@ const Annotations = () => {
       <div className="annotations-intro">
         <h1>{text[0].title}</h1>
         <h2>{text[0].subtitle}</h2>
-        <p>By: {text[0].by}</p>
+        {/* <p>By: {text[0].by}</p> */}
         <div className="intro-text">
           <p>{text[0].introduction}</p>
         </div>
@@ -24,7 +24,8 @@ const Annotations = () => {
         <AnnotationItem item={statue} className="statue" />
       </div>
       <div className="annotations-conclusion">
-        <p>Conclusion :{text[0].conclusion}</p>
+        <h4>Conclusion:</h4>
+        <p>{text[0].conclusion}</p>
       </div>
     </div>
   );
