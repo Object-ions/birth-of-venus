@@ -2,7 +2,7 @@
 
 ### by Moses Atia Poston
 
-[live version](https://github.com/)
+[live version](https://birth-of-venus.netlify.app/)
 
 ## Description
 
