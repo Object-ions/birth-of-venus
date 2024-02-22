@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './NavBar.scss';
 
 const NavBar = () => {
@@ -12,7 +12,9 @@ const NavBar = () => {
   ];
   return (
     <nav className="NavBar">
-      <h1 className="logotype">Birth of Venus</h1>
+      <Link to={'/'}>
+        <h1 className="logotype">Birth of Venus</h1>
+      </Link>
       <ul>
         {linkList.map((link, index) => (
           <li key={index}>
