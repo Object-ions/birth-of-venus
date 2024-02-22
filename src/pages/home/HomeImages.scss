@@ -16,6 +16,14 @@
     }
   }
 
+  .image-6 {
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    width: 98%;
+    // height: 100%;
+    object-fit: cover;
+  }
   .static-image {
     position: absolute;
     top: 0;
